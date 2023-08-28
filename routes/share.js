@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
     console.log(req.query);
     await connectToMongo();
     let data = req.query;
-    res.redirect(`http://localhost:3000/login?username=${data.username}&id=${data.id}`)
+    res.redirect(`https://cloudnotebook-2uop.onrender.com/login?username=${data.username}&id=${data.id}`)
 })
 
 module.exports = router
