@@ -1,8 +1,11 @@
 // const mongoose = require("mongoose")
 const express = require("express")
 const app = express()
+const cors = require("cors")
 app.use(express.static("public"))
+app.use(cors())
 app.use(express.json())
+
 // const Notes = require("./models/Notes")
 // const User = require("./models/User")
 const port = 5000
